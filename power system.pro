@@ -2,24 +2,26 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/wwd/Documents/eagle/Power System/power system.brd
 
-Start at      : 19:16:39 (10/28/14)
-End at        : 19:16:45 (10/28/14)
-Elapsed time  : 00:00:02
+Start at      : 16:16:23 (11/1/14)
+End at        : 16:16:28 (11/1/14)
+Elapsed time  : 00:00:00
 
-Signals       :    14   RoutingGrid: 9 mil  Layers: 2
-Connections   :    74   predefined:  74 ( 1 Vias )
+Signals       :    18   RoutingGrid: 9 mil  Layers: 2
+Connections   :    73   predefined:  71 ( 5 Vias )
 
 Router memory :   692188
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Job has been interrupted!
 
-Time per pass     :  00:00:02  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Passname          : TopRouter
 
-Routed            :         0         0         0         0         0         0
-Vias              :         0         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Time per pass     :  00:00:00
+Number of Ripups  :         0
+max. Level        :         0
+max. Total        :         0
 
-Final             : 100.0% finished
+Routed            :         0
+Vias              :         0
+Resolution        :    97.3 %
+
+Final             : 97.3% finished
