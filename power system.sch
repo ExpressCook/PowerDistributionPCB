@@ -10149,9 +10149,9 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R2" library="eagle-ltspice" deviceset="R" device="R1206" value="250"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="fuse" deviceset="TE5" device="" value="2A"/>
-<part name="F2" library="fuse" deviceset="TE5" device="" value="3A"/>
-<part name="F3" library="fuse" deviceset="TE5" device="" value="3A"/>
-<part name="F4" library="fuse" deviceset="TE5" device="" value="4A"/>
+<part name="F2" library="fuse" deviceset="TE5" device="" value="4A"/>
+<part name="F3" library="fuse" deviceset="TE5" device="" value="4A"/>
+<part name="F4" library="fuse" deviceset="TE5" device="" value="2A"/>
 <part name="F5" library="fuse" deviceset="TE5" device="" value="2A"/>
 <part name="F6" library="fuse" deviceset="TE5" device="" value="2A"/>
 <part name="F7" library="fuse" deviceset="TE5" device="" value="2A"/>
@@ -10182,8 +10182,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="M_X" library="con-molex" deviceset="5566-2" device=""/>
-<part name="M_Y" library="con-molex" deviceset="5566-2" device=""/>
 <part name="M_DC" library="con-molex" deviceset="5566-2" device=""/>
+<part name="M_Y" library="con-molex" deviceset="5566-2" device=""/>
 <part name="M_R" library="con-molex" deviceset="5566-2" device=""/>
 <part name="12V1" library="con-molex" deviceset="5566-2" device=""/>
 <part name="12V2" library="con-molex" deviceset="5566-2" device=""/>
@@ -10247,10 +10247,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <instance part="GND16" gate="1" x="0" y="121.92"/>
 <instance part="M_X" gate="-1" x="127" y="116.84"/>
 <instance part="M_X" gate="-2" x="127" y="111.76"/>
-<instance part="M_Y" gate="-1" x="127" y="101.6"/>
-<instance part="M_Y" gate="-2" x="127" y="96.52"/>
-<instance part="M_DC" gate="-1" x="127" y="83.82"/>
-<instance part="M_DC" gate="-2" x="127" y="78.74"/>
+<instance part="M_DC" gate="-1" x="127" y="101.6"/>
+<instance part="M_DC" gate="-2" x="127" y="96.52"/>
+<instance part="M_Y" gate="-1" x="127" y="83.82"/>
+<instance part="M_Y" gate="-2" x="127" y="78.74"/>
 <instance part="M_R" gate="-1" x="127" y="66.04"/>
 <instance part="M_R" gate="-2" x="127" y="60.96"/>
 <instance part="12V1" gate="-1" x="127" y="50.8"/>
@@ -10341,7 +10341,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="99.06" y="91.44"/>
 <wire x1="104.14" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <junction x="104.14" y="91.44"/>
-<pinref part="M_Y" gate="-2" pin="S"/>
+<pinref part="M_DC" gate="-2" pin="S"/>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10355,7 +10355,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="99.06" y="73.66"/>
 <wire x1="104.14" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
 <junction x="104.14" y="73.66"/>
-<pinref part="M_DC" gate="-2" pin="S"/>
+<pinref part="M_Y" gate="-2" pin="S"/>
 <wire x1="124.46" y1="73.66" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10520,7 +10520,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="96.52" y="101.6"/>
 <wire x1="104.14" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <junction x="104.14" y="101.6"/>
-<pinref part="M_Y" gate="-1" pin="S"/>
+<pinref part="M_DC" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -10534,7 +10534,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <junction x="96.52" y="83.82"/>
 <wire x1="104.14" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
 <junction x="104.14" y="83.82"/>
-<pinref part="M_DC" gate="-1" pin="S"/>
+<pinref part="M_Y" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -10627,6 +10627,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-2.54,129.54,INPUT-1,S,,,,"/>
+<approved hash="101,1,-2.54,132.08,INPUT-2,S,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
